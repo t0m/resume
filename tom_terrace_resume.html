@@ -45,7 +45,8 @@
       ul.section-list {
         float:left;
         display:inline;
-        padding-right:21px;
+        padding-right:40px;
+        padding-left:40px;
       }
       ul.bulleted-list {
         list-style:disc outside;
@@ -108,20 +109,20 @@
         <div class="header-left">
           <h1>THOMAS TERRACE</h1>
           <div class="title">
-            Software Engineer 
+            Software Engineer
             <span style="font-size:0.8em">Top Secret/SSBI (Inactive/Clearable)</span>
           </div>
         </div>
         <div class="header-right">
           <ul>
-            <li>Washington DC</li>
+            <li>Boston, MA</li>
             <li>203.676.8471</li>
             <li>
               <span style="direction:rtl; unicode-bidi:bidi-override">
                 liamg
               </span>
               <span style="direction:rtl; unicode-bidi:bidi-override">
-                (ta) ecarrett 
+                (ta) ecarrett
               </span>
             </li>
           </ul>
@@ -129,48 +130,45 @@
         <div class="clear"></div>
       </div>
     </div>
+    <!--
     <div class="section-wrapper">
       <div class="section">
         <h2>Summary</h2>
         <div class="summary section-main">
-          I enjoy working with a wide variety of technologies to solve difficult 
-          problems for businesses and individuals. From small utility apps to 
-          large data warehouses, I strive to write clean, maintainable software
-          that people like to use.
+          I enjoy working with a wide variety of technologies to solve difficult
+          problems for businesses and individuals. I have over ten years of experience
+          in application development, infrastructure engineering, and system design.
         </div>
         <div class="clear"></div>
       </div>
     </div>
+  -->
     <div class="section-wrapper">
       <div class="section">
         <h2>Skills</h2>
         <div class="section-main">
           <ul class="section-list">
-            <li class="list-header">Front End</li>
-            <li>HTML5/CSS3 Design</li>
-            <li>Cross-Browser Compatibility</li>
-            <li>JavaScript &amp; JQuery</li>
-            <li>Google Web Toolkit</li>
+            <li class="list-header">Languages</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript/Dart</li>
+            <li>Perl</li>
+            <li>Go</li>
           </ul>
           <ul class="section-list">
-            <li class="list-header">Middle Tier</li>
-            <li>Java: Spring MVC &amp; Struts2</li>
-            <li>Ruby: Rails &amp; Sinatra</li>
-            <li>Python: Django &amp; Bottle</li>
-            <li>PHP</li>
+            <li class="list-header">App/Infrastructure</li>
+            <li>AWS Platform</li>
+            <li>Workflow/Queueing (SWF/SQS)</li>
+            <li>Containers (Docker/ECS)</li>
+            <li>CI &amp; CD Systems</li>
+            <li>GRPC &amp; Protobuf</li>
           </ul>
           <ul class="section-list">
             <li class="list-header">Data Tier</li>
-            <li>Oracle</li>
-            <li>MySQL</li>
             <li>PostgreSQL</li>
-            <li>Memcached &amp; Redis</li>
-          </ul>
-          <ul class="section-list">
-            <li class="list-header">Scripting</li>
-            <li>Python</li>
-            <li>Perl</li>
-            <li>Ruby</li>
+            <li>Redis</li>
+            <li>Cassandra</li>
+            <li>ElasticSearch</li>
           </ul>
         </div>
         <div class="clear"></div>
@@ -180,70 +178,97 @@
       <div class="section">
         <h2>Experience</h2>
         <div class="section-main">
-          <table>
+          <table  style="border-bottom: 1px solid #ccc">
+            <tr>
+              <td class="list-header ">WordStream</td>
+              <td class="duration ">Director, Infrastructure - 2017-present</td>
+            </tr>
+            <tr>
+              <td class="list-header "></td>
+              <td class="duration ">Team Lead, Infrastructure - 2015-2017</td>
+            </tr>
+            <tr>
+              <td class="list-header "></td>
+              <td class="duration ">Senior Software Engineer - 2013-2015</td>
+            </tr>
+
+          </table>
+          <ul class="bulleted-list">
+            <li>
+              Responsible for all the application resources running in the development, staging,
+              and production cloud environments. Drove initiatives to improve monitoring, cut cloud
+              costs, and identify high priority application and infrastructure improvements.
+              Led post-mortem analyses to locate and fix root causes for outages and maintain
+              service-level objectives.
+            </li>
+            <li>
+              Converted the WordStream codebase to Python 3 during the latter half of
+              2019. Coded a container-based continuous integration system from scratch to find and
+              report Python 3 incompatibilities, as well as generic code issues, on all
+              branch pushes and pull requests. The CI system uses a mix of AST analysis,
+              simple regexes, as well as a containerized and scripted version of the
+              PyCharm editor to find code issues in the repository.
+            </li>
+            <li>
+              Designed and coded a platform to handle frequent code releases to
+              AWS infrastructure using cloudformation, boto3 and other infrastructure-as-code
+              tools. The platform uses a blue/green deployment model to avoid downtime
+              and facilitate simple rollbacks.
+            </li>
+            <li>
+              Designed and coded a &quot;performance testing&quot; platform that engineers use to
+              create on-demand, transient testing environments with full copies of production data.
+              These testing environments are invaluable in tracking down data-dependent bugs and
+              performance regressions.
+            </li>
+            <li>
+              Coded a set of database migration tools on top of the Bucardo replication system
+              that was used to successfully migrate ~30 terabytes of data from PostgreSQL databases
+              running on self-hosted EC2 machines to Amazon's managed RDS (Relational Database Service)
+              with zero downtime.
+            </li>
+          </ul>
+          <table style="border-bottom: 1px solid #ccc">
             <tr>
               <td class="list-header ">Knowcean Consulting</td>
-              <td class="duration ">2007-present</td>
+              <td class="duration ">Software Engineer - 2007-2013</td>
             </tr>
           </table>
           <ul class="bulleted-list">
             <li>
-              Designed and performance-tuned a star-schema data warehouse with 
-              over sixty million records. Wrote MDX queries to fetch summary 
-              reports and a coded a Java Servlet to generate performant ad-hoc
-              SQL queries. Coded a rich-client web GUI for the front-end using 
-              Google Web Toolkit. Identified and submitted patches for bugs in 
-              the open source GWTP project.
+              Designed and performance-tuned a star-schema data warehouse.
+              Wrote MDX queries to fetch summary reports and a coded
+              Java Servlets to generate performant ad-hoc SQL queries. Coded a
+              rich-client web GUI for the front-end using Google Web Toolkit.
+              Identified and submitted patches for bugs in the open source GWTP
+              project.
             </li>
             <li>
-              Developed a multi-layered application to uniquely identify 
-              organizations based on non-standardized name and address 
-              information. The system is able to tolerate a wide variation of 
-              address and name inputs with a high degree of accuracy using a 
-              progressively relaxing fuzzy text search algorithm. Responsible 
-              for everything from designing the GUI to developing the database 
-              schema. Based on performance testing, the system will handle over 
-              ten years worth of data at the current growth rate.
+              Designed and coded a Java application to uniquely identify
+              organizations based on non-standardized name and address
+              information. The system could tolerate a wide variation of
+              address and name inputs with a high degree of accuracy using a
+              fuzzy text search algorithm.
             </li>
             <li>
-              Worked with a medium-sized team to deploy a full-stack 
-              J2EE application to aid the Department of Commerce&#39;s Office of 
-              Export Enforcement.  The application uses the Struts 2 web 
-              framework, Spring for dependency injection &amp; JDBC transaction 
-              handling, and Hibernate for an ORM. Identified and submitted 
+              Worked with a medium-sized team to design and deploy a full-stack
+              J2EE application to aid the Department of Commerce&#39;s Office of
+              Export Enforcement.  The application used the Struts 2 web
+              framework, Spring for dependency injection &amp; JDBC transaction
+              handling, and Hibernate for an ORM. Identified and submitted
               patches for bugs in the open source Struts2 project.
             </li>
-            <li>
-              Coded a Rails 3 app to manage a TWiki site with over a thousand 
-              users for the National Institute of Standards and Technology 
-              Cloud Computing effort. The app uses the Mechanize gem to 
-              automate user registration and allows the otherwise 
-              manually-intensive task of user management to be handled by a 
-              single administrator in seconds.
-            </li>
           </ul>
-          <table>
-            <tr>
-              <td class="list-header ">RRG, Inc.</td>
-              <td class="duration ">2008-present</td>
-            </tr>
-          </table>
-          <ul class="bulleted-list">
-            <li>
-              Designed and coded several reports to analyze sales and gauge 
-              auditing performance using Crystal Reports. Updated a group of 
-              legacy reports to use the new report template.
-            </li>
-          </ul>
+
           <div class="list-header ">Personal Projects</div>
-          <ul class="bulleted-list">
+           <ul class="bulleted-list">
             <li>
-              See my github account at 
+              See my github account at
               <a href="https://github.com/t0m">https://github.com/t0m</a>
               for small personal projects I&#39;ve done in python, javascript, ruby, and C.
             </li>
           </ul>
-        </div>
+         </div>
         <div class="clear"></div>
       </div>
     </div>
@@ -253,14 +278,10 @@
         <div class="section-main">
           <table>
             <tr>
-              <td class="list-header">Providence College</td>
+              <td class="list-header">B.S. Computer Science, Providence College</td>
               <td class="duration">2003-2007</td>
             </tr>
           </table>
-          <ul class="bulleted-list">
-            <li style="padding-bottom:5px;">Major: Computer Science</li>
-            <li>Minor: Philosophy</li>
-          </ul>
         </div>
         <div class="clear"></div>
       </div>
