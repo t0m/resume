@@ -1,0 +1,75 @@
+\documentclass[10pt]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+% !TEX encoding = UTF-8 Unicode
+\usepackage[french,english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage[hmargin=3cm,vmargin=0.8cm]{geometry} 
+\usepackage{graphicx}	
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage{mdwlist}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks = true,
+	urlcolor = cyan
+}
+
+\title{\bfseries\Huge Tom Terrace\vspace{-0.3cm}}
+\author{
+	Boston, Massachusetts\\
+	\href{mailto:tterrace@gmail.com}{tterrace@gmail.com}\vspace{-0.5cm}
+}
+\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+% remove page number
+\thispagestyle{empty}
+\pagestyle{empty}
+
+\begin{description*}
+	\item[Programming] Python, Go, JavaScript/Dart, Bash, C/C++\ldots
+	\item[Data] PostgreSQL/MySQL/OracleDB, BigQuery, RedShift, Cassandra\ldots
+	\item[Platforms] AWS/GCP/Azure, Linux/BSD\ldots
+	\item[Tools] Containers, Workflows (SWF/Cloud Workflows), Data Serialization (gRPC/protobuf)\ldots
+\end{description*}
+
+\section*{Professional Experience}
+\begin{center}
+	\begin{tabularx}{\linewidth}{p{0.15\linewidth} | X}
+
+
+	\hfill 2021 -- present	&{\bf Wayfair} - {\it Senior Manager, Operating Systems team}\vspace{5pt} \\
+     					&{Led the Operating Systems team for Wayfair, which was responsible for building the platform and services that support hundreds of applications across tens of thousands of virtual machines, and host the most critical services for the business. Developed CI/CD platforms to catch software incompatibilities before they were deployed, and drove adoption of OS upgrades and security software across the company. }\vspace{14pt}\\
+
+	\hfill 2020 -- 2021	&{\bf Wayfair} - {\it Staff Engineer, Infrastructure \& Platforms}\vspace{5pt} \\
+     					&{During the on-prem to GCP migration, developed a system to track the migration progress of VMWare VMs, Kubernetes namespaces, Kafka topics, and databases into the cloud. The system automatically generated executive reports and detailed spreadsheets, including financial calculations, that were used by leadership to make key decisions.}\vspace{14pt}\\\
+
+	\hfill 2016 -- 2020	&{\bf WordStream} - {\it Director, Infrastructure Team}\vspace{5pt} \\
+     					&{Responsible for networking, infrastructure, and application support services running in the development, staging, and production AWS environments. Drove initiatives to improve monitoring, cut cloud costs, and identify high priority application and infrastructure improvements. Led post-mortem analyses to locate and fix root causes for outages and maintain SLO/SLAs.}\vspace{14pt}\\
+
+	\hfill 2013 -- 2015	&{\bf WordStream} - {\it Senior Software Engineer}\vspace{5pt} \\
+					&{Redesigned several key pieces of the software stack, including: a ground-up refactor of the data ingestion platform that paved the path for a 10x growth in volume, adding authentication and authorization to the home-grown web framework that powered the website, and completing the migration off of Flex/SWF to a hybrid single-page application.}\vspace{14pt}\\
+
+	\hfill 2007-2012 &{\bf Knowcean Consulting} - {\it Software Engineer}\vspace{5pt} \\
+					&{Designed and built a suite of Java-based web applications as part of an effort to decommission and replace an outdated and cumbersome license application system (described in \href{https://www.federalregister.gov/documents/2008/08/21/E8-18852/mandatory-electronic-filing-of-export-and-reexport-license-applications-classification-requests}{73 FR 49323}). Identified and submitted several patches for bugs in open source projects, including Struts 2, Hibernate, and GWTP. Held Top Secret security clearance (TS/SSBI) from 2008-2012. }\vspace{14pt}\\
+
+	
+	\end{tabularx}
+\end{center}
+
+
+\section*{Education}
+\begin{center}
+	\begin{tabularx}{\linewidth}{p{0.15\linewidth} | X}
+	\hfill 2007			&{\bf Providence College}\vspace{5pt} \\
+					&{Bsc. in Computer Science}\vspace{14pt}\\
+
+	\end{tabularx}
+\end{center}
+
+
+
+\end{document}  
